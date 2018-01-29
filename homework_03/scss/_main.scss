@@ -1,0 +1,168 @@
+@mixin briefBlock($boxSizing,$padding){
+  .brief{
+    box-sizing: $boxSizing;
+    padding: $padding;
+    width: $widthBrief;
+    margin: $marginBrief;
+    color: $colorBrief;
+    float: $floatBrief;
+    background-color: $colorBackgroundBlock;
+  }
+}
+
+@mixin textForm(){
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: $colorLabelForm;
+  display: block;
+}
+
+
+@mixin inputElem(){
+  input{
+    height: 25px;
+    width: 100%;
+    padding-left: 5px;
+    border: 1px solid $tableColorHead;
+
+  }
+}
+@mixin nameSurname($marginRightNameSur){
+  width: 49%;
+  float: left;
+  margin-right: $marginRightNameSur;
+}
+
+@mixin imgBlock($float, $marginLeft){
+  display: inline-block;
+  padding: 2px;
+  margin: $marginLeft 10px 10px 0;
+  border: 3px solid $textCaptionBorderImage;
+  float: $float;
+}
+
+body{
+  background-color: $bodyBackground;
+}
+
+#content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  background: $contentBackground;
+  color: $textColor;
+
+  h1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-transform: $transformH1;
+    color: $textCaptionBorderImage;
+  }
+  h2{
+    color: $textCaptionBorderImage;
+  }
+
+  @include briefBlock(border-box,20px);
+
+  table{
+    width: 95%;
+    border-collapse: collapse;
+    margin-bottom: 60px;
+
+
+    caption{
+      text-align: right;
+      color: #000000;
+    }
+    tr{
+      height: 40px;
+      border-bottom: 2px solid $tableColorHead;
+
+
+      th {
+        background-color: $tableColorHead;
+        color: #000000;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: left;
+        padding-left: 20px;
+
+        &:not(:last-child) {
+          border-right: 1px solid #ffffff;
+        }
+       }
+
+      td{
+        color: $textTableColor;
+        background-color: $tableRowBackgraund;
+        padding-left: 15px;
+      }
+    }
+  }
+  div:last-child{
+    width: 100%;
+
+    div{
+      box-sizing: border-box;
+      height: 60px;
+
+      &.name{
+        @include nameSurname($marginRightNameSur);
+      }
+
+      &.surname {
+        @include nameSurname(0);
+
+        label{
+          @include textForm;
+        }
+
+        @include inputElem;
+      }
+    }
+    .full-width{
+      clear: both;
+    }
+
+    label{
+      @include textForm;
+    }
+
+    @include inputElem;
+
+    .coment{
+      margin-top: 0;
+      @include textForm;
+    }
+
+    textarea{
+      width: 100%;
+      border: 1px solid $tableColorHead;
+    }
+    button{
+      width: 230px;
+      height: 40px;
+      font-size: large;
+      text-transform: uppercase;
+      background-color: $contentBackground;
+      color: $linkTableColor;
+      border: 1px solid $linkTableColor;
+      margin: 10px 0;
+    }
+  }
+
+  a{
+    color: $linkTableColor;
+  }
+  .img-left{
+    @include imgBlock(left, 0);
+  }
+
+  .img-right{
+    @include imgBlock(right, 10px);
+  }
+}
+
+

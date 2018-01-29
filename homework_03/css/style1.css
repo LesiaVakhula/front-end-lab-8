@@ -1,0 +1,118 @@
+body {
+  background-color: #dcbb9a; }
+
+#content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  background: #ffffff;
+  color: #000000; }
+  #content h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-transform: none;
+    color: #893c00; }
+  #content h2 {
+    color: #893c00; }
+  #content .brief {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 430px;
+    margin: 0 15px 15px 0;
+    color: inherit;
+    float: left;
+    background-color: #fadcba; }
+  #content table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-bottom: 60px; }
+    #content table caption {
+      text-align: right;
+      color: #000000; }
+    #content table tr {
+      height: 40px;
+      border-bottom: 2px solid #e0e0e0; }
+      #content table tr th {
+        background-color: #e0e0e0;
+        color: #000000;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: left;
+        padding-left: 20px; }
+        #content table tr th:not(:last-child) {
+          border-right: 1px solid #ffffff; }
+      #content table tr td {
+        color: #000000;
+        background-color: #ffffff;
+        padding-left: 15px; }
+  #content div:last-child {
+    width: 100%; }
+    #content div:last-child div {
+      box-sizing: border-box;
+      height: 60px; }
+      #content div:last-child div.name {
+        width: 49%;
+        float: left;
+        margin-right: 2%; }
+      #content div:last-child div.surname {
+        width: 49%;
+        float: left;
+        margin-right: 0; }
+        #content div:last-child div.surname label {
+          text-transform: uppercase;
+          margin-bottom: 0;
+          color: #6d6d6d;
+          display: block; }
+        #content div:last-child div.surname input {
+          height: 25px;
+          width: 100%;
+          padding-left: 5px;
+          border: 1px solid #e0e0e0; }
+    #content div:last-child .full-width {
+      clear: both; }
+    #content div:last-child label {
+      text-transform: uppercase;
+      margin-bottom: 0;
+      color: #6d6d6d;
+      display: block; }
+    #content div:last-child input {
+      height: 25px;
+      width: 100%;
+      padding-left: 5px;
+      border: 1px solid #e0e0e0; }
+    #content div:last-child .coment {
+      margin-top: 0;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      color: #6d6d6d;
+      display: block; }
+    #content div:last-child textarea {
+      width: 100%;
+      border: 1px solid #e0e0e0; }
+    #content div:last-child button {
+      width: 230px;
+      height: 40px;
+      font-size: large;
+      text-transform: uppercase;
+      background-color: #ffffff;
+      color: #4682B4;
+      border: 1px solid #4682B4;
+      margin: 10px 0; }
+  #content a {
+    color: #4682B4; }
+  #content .img-left {
+    display: inline-block;
+    padding: 2px;
+    margin: 0 10px 10px 0;
+    border: 3px solid #893c00;
+    float: left; }
+  #content .img-right {
+    display: inline-block;
+    padding: 2px;
+    margin: 10px 10px 10px 0;
+    border: 3px solid #893c00;
+    float: right; }
+
+/*# sourceMappingURL=style1.css.map */
