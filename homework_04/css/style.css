@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+ @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+
 body{
     margin: 0;
     display: flex;
@@ -6,9 +7,10 @@ body{
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     padding: 0;
-    min-width: 900px;
+    min-width: 900px
 }
-.main-header-caption, section, footer{
+
+.main-header-caption,section,footer{
     margin: auto;
     padding: 0 7%;
     width: 100%;
@@ -18,16 +20,19 @@ body{
 }
 
 .main-header-caption,.img-block,.artcl-feature,nav ul,header,form,.header-caption,section,footer,form,footer nav,footer div{
-display: flex;
+    display: flex;
 }
+
 .main-header-caption,section,form,.bl-wt-end,.cont,.tweet,input,button,.form-block,.img-block div div,.header-caption .btn,nav li,header,footer,footer nav,footer div{
-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .artcl-feature,.main-header-caption {
-flex-direction: column;
+    flex-direction: column;
 }
+
 footer nav,footer div,.img-block,.description,.header-caption,header{
-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .main-header-caption{
@@ -69,7 +74,7 @@ nav li:hover{
     border-bottom: 1px solid #fff;
 
 }
-nav li a {
+nav li a{
     display: inline-block;
     margin: 3px 5px;
 }
@@ -83,8 +88,8 @@ nav li a {
     align-items: center;
     height: 640px;
     padding: 110px 0;
-
 }
+
 .header-caption h1{
     font-size: 50px;
     font-weight: 100;
@@ -95,6 +100,7 @@ nav li a {
     padding-bottom: 0;
     margin: 50px 0 0;
 }
+
 .header-caption span{
     font-family: Times New Roman sans-serif;
     font-size: 2em;
@@ -114,6 +120,7 @@ h1:after{
     text-align: center;
     color: #fff;
 }
+
 .header-caption .btn{
     height: 60px;
     width: 230px;
