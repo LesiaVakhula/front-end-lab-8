@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    min-width: 900px;
+}
+.main-header-caption, section, footer{
+    margin: auto;
+    padding: 0 7%;
+    width: 100%;
+    max-width: 1500px;
+    min-width: 900px;
+    align-items: center;
+}
+
+.main-header-caption,.img-block,.artcl-feature,nav ul,header,form,.header-caption,section,footer,form,footer nav,footer div{
+display: flex;
+}
+.main-header-caption,section,form,.bl-wt-end,.cont,.tweet,input,button,.form-block,.img-block div div,.header-caption .btn,nav li,header,footer,footer nav,footer div{
+box-sizing: border-box;
+}
+.artcl-feature,.main-header-caption {
+flex-direction: column;
+}
+footer nav,footer div,.img-block,.description,.header-caption,header{
+justify-content: space-between;
+}
+
+.main-header-caption{
+    background: url("../img/apples.jpg") no-repeat center 0;
+    align-items: center;
+}
+
+header,.header-caption{
+    min-width: 900px;
+    width: 100%;
+}
+
+header{
+    margin: 0;
+    height: 100px;
+    align-items: center;
+}
+header a,.header-caption a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav{
+    width: 40%;
+    padding: 0 30px;
+}
+nav ul{
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav li{
+    text-decoration: none;
+    display: block;
+    width: auto;
+}
+
+nav li:hover{
+    border-bottom: 1px solid #fff;
+
+}
+nav li a {
+    display: inline-block;
+    margin: 3px 5px;
+}
+
+.header-nav div:first-child{
+    text-transform: uppercase;
+}
+.header-caption{
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    height: 640px;
+    padding: 110px 0;
+
+}
+.header-caption h1{
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 8px;
+    position: relative;
+    padding-bottom: 0;
+    margin: 50px 0 0;
+}
+.header-caption span{
+    font-family: Times New Roman sans-serif;
+    font-size: 2em;
+}
+
+h1:after{
+    content: 'TM';
+    position: absolute;
+    font-size: 16px;
+    top: 50px;
+    letter-spacing: normal;
+}
+
+.header-caption p{
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    color: #fff;
+}
+.header-caption .btn{
+    height: 60px;
+    width: 230px;
+    border: 2px solid #fff;
+    padding: 19px 70px;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+section:last-child{
+    align-items: center;
+}
+
+.description div{
+    margin: 130px 0;
+}
+
+.description div:first-child{
+    font-size: 1.5em;
+    width: 40%;
+    line-height: 1.6;
+}
+
+.description div:last-child{
+    width: 50%;
+    font-size: 1.05em;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.description span{
+    font-weight: 600;
+}
+
+body section:nth-child(3){
+    background-color: #f3f3f3;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    flex-direction: column;
+}
+.artcl-feature{
+    width: 100%;
+    margin: 65px 0;
+    padding: 0;
+}
+section h2{
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
+
+.img-block{
+    margin: 30px 0;
+    width: 100%;
+    padding: 0;
+    height: 300px;
+}
+
+.img1,.img2,.img3,.img4{
+    position: relative;
+}
+
+.img1::after,.img2::after,.img3::after,.img4::after{
+    background: linear-gradient(rgba(255, 255, 255, 0) 65%, rgba(0, 0, 0, 0.6) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.img1 img,.img2 img,.img3 img,.img4 img{
+    height: 100%;
+    width: 100%;
+}
+
+.img1,.img4{
+    width: 60%;
+}
+
+.img2,.img3{
+    width: 38%;
+}
+
+.img-block p{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: #E8E8E8;
+    font-size: 1.2em;
+    z-index: 2;
+}
+.img-block p span{
+    font-weight: 600;
+    color: #fff;
+    z-index: 2;
+}
+.img-block div div{
+    position: absolute;
+    top:10%;
+    right: 5%;
+    border: 2px solid #fff;
+    color: #fff;
+    height: 40px;
+    width: 67px;
+    padding: 7px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.form-block{
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+    height: 200px;
+    padding: 70px 100px;
+    background-color: #fff;
+}
+
+form{
+    width: 100%;
+    padding: 0;
+}
+
+label{
+    display: block;
+}
+
+input{
+    display: block;
+    background-color: #f3f3f3;
+    border: 1px solid #343638;
+}
+
+button{
+    display: block;
+    color: #fff;
+    border: none;
+    background-color: #343638;
+}
+
+.form-block label{
+    margin: auto;
+    font-size: 20px;
+}
+
+.form-block input{
+    width: 430px;
+    height: 60px;
+    font-size: 16px;
+    margin-left: 0;
+    padding-left: 3%;
+}
+
+.form-block input::-webkit-input-placeholder {
+    color: #000;
+}
+.form-block input::-moz-placeholder {
+    color: #000;
+}
+
+.form-block button{
+    margin-left: 0;
+    height: 60px;
+    width: 170px;
+}
+
+.cont-info-subscrb{
+    width: 100%;
+    display: grid;
+    grid-template: 50% /1fr 1fr 1fr 1fr;
+    grid-template-areas: "bl-wt-end cont tweet sbscrb";
+}
+.bl-wt-end{
+    grid-area: bl-wt-end;
+}
+
+.cont{
+    grid-area: cont;
+}
+
+.tweet{
+    grid-area: tweet;
+}
+
+.sbscrb-letter{
+    grid-area: sbscrb;
+}
+
+.cont-info-subscrb p{
+    text-align: justify;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.bl-wt-end,.cont,.tweet{
+    box-sizing: border-box;
+    padding-right: 30%;
+}
+
+.cont-info-subscrb{
+    margin: 0;
+    min-width: 900px;
+    width: 100%;
+    padding: 100px 0;
+}
+.tweet p{
+    font-style: italic;
+}
+.tweet span{
+    color: #E8E8E8;
+}
+
+.cont p{
+    line-height: 1.9;
+}
+
+.cont-info-subscrb p, footer p{
+    color: #A4A4A4;
+}
+
+h4{
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+.bl-wt-end,.tweet,.tweet{
+    line-height: 1.7;
+}
+.sbscrb-letter input{
+    width: 65%;
+    height: 45px;
+    padding-left: 3%;
+}
+
+.sbscrb-letter button{
+    width: 35%;
+}
+
+.sbscrb-letter input::-webkit-input-placeholder {
+    color: #A4A4A4;
+    font-style: italic;
+}
+.sbscrb-letter input::-moz-placeholder {
+    color: #A4A4A4;
+    font-style: italic;
+}
+
+footer div{
+    height: 80px;
+    border-top: 1px solid #E8E8E8;
+    padding-top: 30px;
+    width: 100%;
+}
+
+footer p,footer nav{
+    width: 40%;
+    margin: 0;
+}
+
+footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: #343638;
+}
