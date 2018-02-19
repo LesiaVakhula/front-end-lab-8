@@ -5,4 +5,3 @@ function decypherPhrase(object = {a: 'o', c: 'd', t: 'g'}, str ='kiggy dog') {
     }
     return cypherPhrase(reverseObject,str);
 }
-console.log(decypherPhrase());

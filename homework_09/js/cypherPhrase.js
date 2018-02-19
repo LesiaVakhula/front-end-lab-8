@@ -17,4 +17,3 @@ function cypherPhrase(object={a: 'o',c: 'd', t: 'g'}, string='kitty cat' ){
         return elemArr
     }).join('');
 }
-console.log(cypherPhrase())
