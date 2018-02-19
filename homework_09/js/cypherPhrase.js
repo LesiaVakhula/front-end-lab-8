@@ -1,4 +1,4 @@
-function cypherPhrase(object, string ){
+function cypherPhrase(object={a: 'o',c: 'd', t: 'g'}, string='kitty cat' ){
     var newStrArr,
         arrKey=[],
         arrValue=[];
@@ -17,4 +17,4 @@ function cypherPhrase(object, string ){
         return elemArr
     }).join('');
 }
-
+console.log(cypherPhrase())
