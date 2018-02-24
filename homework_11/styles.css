@@ -1,0 +1,46 @@
+ul{
+    margin: 0;
+    padding-left: 20px;
+    width: 100%;
+    background-color: transparent;
+    list-style: none;
+    cursor: pointer;
+}
+li{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+li>i{
+    margin: -10px;
+}
+.material-icons{
+    position: relative;
+    top: 4px;
+}
+p{
+    padding: 2px 0;
+    margin: 0;
+}
+.stop{
+    display: inline-block;
+    width: 100%;
+    color: #000000;
+    padding: 3px 0;
+}
+p:hover{
+    background-color: #f2f2f2;
+}
+.hide{
+    display: none;
+}
+.block{
+    display: block;
+}
+i{
+    color: #FFD534;
+}
+i.file{
+    color: #ABABAB;
+}
