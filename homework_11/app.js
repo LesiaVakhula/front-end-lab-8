@@ -4,14 +4,11 @@ function createElem(arr) {
     let folder = document.createElement('ul');
     if (arr === structure) {
         folder.className = 'block';
-
     } else {
         folder.className = 'hide';
     }
-
     for (let i = 0, l = arr.length; i < l; i++) {
         let subFolder = document.createElement('li');
-
         function show() {
             let child = this.children;
                 child[0].innerHTML = '<i class="material-icons">folder_open</i>' + arr[i].title;
@@ -32,7 +29,6 @@ function createElem(arr) {
                 this.addEventListener('click', show);
                 event.stopPropagation();
         }
-
         if (arr[i].folder) {
             subFolder.innerHTML = '<p><i class="material-icons ">folder</i>' + arr[i].title + '</p>';
             subFolder.addEventListener('click', show);
@@ -43,7 +39,6 @@ function createElem(arr) {
         if (arr[i].children instanceof Array) {
             subFolder.appendChild(createElem(arr[i].children));
         }
-
         if (arr[i].children === null || arr[i].children === false) {
             let emptyUl = document.createElement('ul'),
                 emptyLi = document.createElement('li');
@@ -56,5 +51,4 @@ function createElem(arr) {
     }
     return folder
 }
-
 rootNode.appendChild(createElem(structure));
