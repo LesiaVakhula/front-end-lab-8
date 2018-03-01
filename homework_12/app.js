@@ -88,14 +88,14 @@ function createDetails(tank) {
     mainDiv.appendChild(mainDetails);
 }
 
-let mainHref,
+let mainHref = '',
     mainDiv = document.getElementById('root'),
     div = createHead();
 
     div.appendChild(createPreview(tanks));
     mainDiv.appendChild(div);
 
-onhashchange = function () {
+window.addEventListener('hashchange', function () {
     mainDiv.innerHTML = '';
     let hashString = location.hash.substring(1);
     let model = hashString.replace(/_/g,' ');
@@ -104,4 +104,4 @@ onhashchange = function () {
             createDetails(tanks[i]);
         }
     }
-};
+});
