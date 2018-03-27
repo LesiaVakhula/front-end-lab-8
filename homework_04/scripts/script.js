@@ -1,8 +1,13 @@
-
 // Task 1
 
-function assign(object, defaultObject, optionsObject) {
-    return Object.assign(object, defaultObject, optionsObject);
+function assign(...args) {
+    var obj = args[0];
+    for (let i = 1, l = args.length; i < l; i++) {
+        for (key in args[i]) {
+            obj[key] = args[i][key];
+        };
+    };
+    return obj;
 };
 
 var defaults = { width: 100, height: 100 };
