@@ -1,13 +1,10 @@
-var exspress = require('express'),
-    app = exspress(),
-    router = exspress.Router(),
-    methods = require('./controllers/handlers');
+let methods = require('./controllers/handlers');
 
-
-router.get('/rockstars', methods.get);
-router.get('/rockstar/:id', methods.getId);
-router.post('/rockstar', methods.post);
-router.put('/rockstar/:id', methods.put);
-router.delete('/rockstar/:id', methods.delete);
-
+function router(app) {
+    app.get('/rockstars', methods.get);
+    app.get('/rockstar/:id', methods.getId);
+    app.post('/rockstar', methods.post);
+    app.put('/rockstar/:id', methods.put);
+    app.delete('/rockstar/:id', methods.delete);
+}
 module.exports = router;
