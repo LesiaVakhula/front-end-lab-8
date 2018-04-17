@@ -61,8 +61,7 @@ class AddMaxLengthValidation extends Decorator{
 
 class AddNumberValidation extends Decorator{
     constructor (object){
-        super(object);
-        console.log(object.valid + '----');
+        super(object);        
         if(typeof this.value === this.type){
             this.valid = true;
             console.log(`Your type value is number. Valid: ${this.valid}`);
