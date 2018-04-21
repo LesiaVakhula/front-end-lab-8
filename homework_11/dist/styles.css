@@ -1,0 +1,31 @@
+body{
+    matgin: auto;
+    text-align: center;
+}
+.main{
+    width: 300px;
+    height: auto;
+    margin: 50px auto;
+}
+.main-input{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 47%;
+}
+
+.main-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 50px;
+    margin: 10px 0;
+}
+p{
+    height: 20px;
+    text-align: left;
+    margin: 10px 0;
+}
