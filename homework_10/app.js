@@ -20,13 +20,6 @@ class NumberInput extends Input {
     }
 }
 
-class TextInput extends Input {
-    constructor(placeHolder){
-        super(placeHolder);
-        this.type = "string";
-    }
-}
-
 class Decorator{
     constructor (object){
         this.placeHolder = object.placeHolder;
@@ -55,7 +48,7 @@ class AddMaxLengthValidation extends Decorator{
     constructor (object, maxValueLength){
         super(object);
         let val = object._value;
-        if(val.toString().length > maxValueLength){
+        if(String(val).length > maxValueLength){
             super.verify(false);
             console.log(`Too large value length. Valid: ${this.valid}`);
         }else{
@@ -68,8 +61,8 @@ class AddMaxLengthValidation extends Decorator{
 
 class AddNumberValidation extends Decorator{
     constructor (object){
-        super(object);
-        if(object.type === 'number'){
+        super(object);        
+        if(typeof this.value === this.type){
             this.valid = true;
             console.log(`Your type value is number. Valid: ${this.valid}`);
         }else {
@@ -80,10 +73,9 @@ class AddNumberValidation extends Decorator{
 
 };
 
-let textInput = new TextInput("Type text...");
 let numberInput = new NumberInput("Type numbers...");
 
-numberInput.setValue(123);
+numberInput.setValue();
 numberInput = new AddRequiredValidation(numberInput);
 numberInput = new AddMaxLengthValidation(numberInput, 5);
 numberInput = new AddNumberValidation(numberInput);
@@ -98,10 +90,14 @@ numberInput1 = new AddNumberValidation(numberInput1);
 
 console.log('---------');
 
-textInput.setValue('dkjghkfjgh');
-textInput = new AddRequiredValidation(textInput);
-textInput = new AddMaxLengthValidation(textInput, 5);
-textInput = new AddNumberValidation(textInput);
+let numberInput2 = new NumberInput("Type numbers...");
+numberInput2.setValue('ytyuyfy');
+numberInput2 = new AddRequiredValidation(numberInput2);
+numberInput2 = new AddMaxLengthValidation(numberInput2, 3);
+numberInput2 = new AddNumberValidation(numberInput2);
+
+console.log('---------');
+
 
 
 
