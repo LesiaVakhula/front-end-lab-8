@@ -200,8 +200,6 @@ const SortView = {
     },
     render: function () {
         let template = '<li class = "names-arrow">Name<div class="press-name arrow-up"></div><div class="press-name arrow-down"></div></li> <li class = "score-arrow">Score<div class="press-arrow arrow-up"></div><div class="press-arrow arrow-down"></div></li>' ;
-
-
         this.$container.html(template);
     },
     handleClicks:function () {
