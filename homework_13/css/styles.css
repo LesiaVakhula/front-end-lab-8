@@ -1,0 +1,201 @@
+body{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+h1{
+    font-size: 30px;
+}
+
+h1,article,img,form{
+    width: 100%;
+}
+
+aside{
+    width: 30%;
+}
+
+input.ng-invalid,textarea.ng-invalid{
+    border: 2px solid #ff0000;
+    outline: none;
+}
+
+.main-post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.trips {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.all-posts{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    position: relative;
+    padding: 10px;
+    background: #e1e0e0;
+    margin: 20px;
+    border-radius: 3px;
+}
+.post-image{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.post-image p{
+    text-align: left;
+}
+
+.post-image p span{
+    padding: 10px;
+    color: #516af7;
+}
+.btn-edit{
+    color: #516af7;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-title{
+    width: 97%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px rgb(11, 17, 14),0 0 1px rgba(44, 74, 57, 0.7);
+}
+.post-form{
+    width: 100%;
+    padding: 10px;
+}
+
+.post-form input{
+    position: absolute;
+    height: 30px;
+    width: 95%;
+    top: 10px;
+    left: 5px;
+    background: #ffffff;
+    overflow: auto;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #727272;
+    outline: none;
+    padding: 0 10px;
+}
+.post-description{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.post-description p{
+    width: 100%;
+}
+
+.post-form textarea{
+    width: 97%;
+    height: 80px;
+    overflow: auto;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #727272;
+    outline: none;
+}
+
+.btn-edit{
+    float: right;
+}
+
+li button{
+    width: 80px;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+li button:hover{
+    color: #516af7;
+    cursor: pointer;
+}
+
+.btn-add{
+    width: 120px;
+    height: 40px;
+    background: #ffffff;
+    border: 2px solid #516af7;
+    color: #516af7;
+    font-size: 14px;
+    box-shadow: 5px 5px 28px 0px rgba(44, 74, 57, 0.8);
+    cursor: pointer;
+}
+
+.btn-add:hover{ 
+    transform: translate(1px,1px); 
+}
+
+.btn-add:active{ 
+    transform: translate(2px,2px); 
+}
+
+.btn-add-wrapper{
+    margin: 25px 0;
+}
+
+.add-form-wrapper{
+    width: 100%;
+}
+
+.add-form{
+    margin: auto;
+    width: 90%;
+    background: #e1e0e0;
+    padding: 10px;
+    border-radius: 3px;
+}
+.add-form-title{
+    width: 40%;
+    margin: 10px 0;
+}
+
+.add-form-item p input,.add-form-item textarea{
+    width: 100%;
+}
+
+.add-form-input{
+    width: 50%;
+    margin: 10px 0;
+}
+
+.add-form-item{
+    display: flex;
+}
+
+
