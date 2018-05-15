@@ -1,0 +1,17 @@
+
+<ng-container *ngIf = "!isAdding">
+    <td class="number">{{num}}</td>
+    <td class="decriptoin"><span *ngIf = "isEditing">{{newClasses.topic}}</span> <input type="text" [(ngModel)]="newClasses.topic" *ngIf = "!isEditing"></td>
+    <td class="decriptoin"><span *ngIf = "isEditing">{{newClasses.date}}</span> <input type="date" [(ngModel)]="newClasses.date"  *ngIf = "!isEditing"></td>
+    <td class="decriptoin"><span *ngIf = "isEditing">{{newClasses.lecture}}</span><input type="text" [(ngModel)]="newClasses.lecture" *ngIf = "!isEditing"></td>
+    <td class="decriptoin"><button (click)='startEndEdit()'>{{isEditing ? 'edit':'save'}}</button><button (click)='remove(num)'>remove</button></td>
+</ng-container>
+
+<ng-container *ngIf = "isAdding">
+        <td class="number">{{num}}</td>
+        <td class="decriptoin"><input type="text" [(ngModel)]="itemClass.topic"></td>
+        <td class="decriptoin"><input type="date" [(ngModel)]="itemClass.date"></td>
+        <td class="decriptoin"><input type="text" [(ngModel)]="itemClass.lecture"></td>
+        <td class="decriptoin"><button (click)="saveItem(itemClass)">save</button><button (click)="discardChange()">discard</button></td>
+</ng-container>
+  

@@ -1,0 +1,28 @@
+<div>
+  <div>
+    <h3>Epam FE Lab #8</h3>
+    <button (click)='addRow()'>Add</button>
+  </div>
+  <div class="wrapper">
+    <div class="header">
+      <p class="number">#</p>
+      <p>Topic</p>
+      <p>Date</p>
+      <p>Lecture</p>
+      <p>Actions</p>
+    </div>
+
+<table>
+  
+    <tr *ngFor = "let item of mainObject,let i = index">
+      <app-class class="rowApp"   
+      [itemClass] = "item" 
+      [num] = "i+1"
+      (removeClassess)="removeItem($event)"
+      (saveClassess)="save($event)"
+      ></app-class> 
+    </tr>
+  
+</table>
+  </div>
+</div>

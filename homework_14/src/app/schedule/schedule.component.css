@@ -1,0 +1,22 @@
+.wrapper{
+    width: max-content;
+    
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+p{
+    width: 150px;
+    text-align: center;
+}
+.number{
+    width: 20px;
+}
+table{
+    border-collapse: collapse;
+}
+tr{
+    height: 50px;
+}
